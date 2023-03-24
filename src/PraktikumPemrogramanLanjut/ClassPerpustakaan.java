@@ -1,3 +1,5 @@
+package PraktikumPemrogramanLanjut;
+
 class Buku{
     String Judul;
     String Penerbit;
@@ -15,7 +17,7 @@ class Buku{
         this.Sinopsis = Sinopsis;
     }
     void display(){
-        System.out.println("\nJudul Buku\t\t\t\t\t: " + this.Judul + "\nPenerbit\t\t\t\t\t: " + this.Penerbit
+        System.out.println("\nJudul PraktikumPemrogramanLanjut.Buku\t\t\t\t\t: " + this.Judul + "\nPenerbit\t\t\t\t\t: " + this.Penerbit
                 + "\nPenulis\t\t\t\t\t\t: " + this.Penulis + "\nJumlah Halaman\t\t\t\t: " + this.JumlahHal + "\nTahun Terbit\t\t\t\t: "
                 + this.TahunTerbit + "\nSinopsis\t\t\t\t\t: " + this.Sinopsis);
     }
