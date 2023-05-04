@@ -51,15 +51,15 @@ class Jaket{
     }
 
     void setPesanan(){
-        String jenis_jaket = null;
+        String TipeJaket = null;
         if (Tipe.equalsIgnoreCase("1"))
-            jenis_jaket = "Jaket A";
+            TipeJaket = "Jaket A";
         else if (Tipe.equalsIgnoreCase("2")) {
-            jenis_jaket = "Jaket B";
+            TipeJaket = "Jaket B";
         } else if (Tipe.equalsIgnoreCase("3")) {
-            jenis_jaket = "Jaket C";
+            TipeJaket = "Jaket C";
         }
-        System.out.println("Jenis yang anda beli : " + jenis_jaket);
+        System.out.println("Jenis yang anda beli : " + TipeJaket);
         System.out.println("Harga                : " + Harga);
         System.out.println("Jumlah jaket         : " + Jumlah + " pcs");
         System.out.println("Total harga          : " + Harga*Jumlah);
