@@ -20,8 +20,5 @@ public class main {
         System.out.println("");
         Jaket pesanan = new Jaket(tipe, jumlah);
         pesanan.display();
-
-
-        
     }
 }
