@@ -1,0 +1,21 @@
+package PraktikumPemrogramanLanjut7;
+
+public class KuePesanan extends Kue {
+    private double Berat;
+    public KuePesanan(String Nama, double Harga, double Berat) {
+        super(Nama, Harga);
+        this.Berat = Berat;
+    }
+    public double hitungHarga(){
+        return Berat * super.getHarga();
+    }
+
+    public double getBerat() {
+        return Berat;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + System.out.printf("\nBerat\t\t: %s gram \nTotal Harga\t: %s\nJenis Kue\t: %s\t\n\n", Berat, hitungHarga(),"Kue Pesanan");
+    }
+}
