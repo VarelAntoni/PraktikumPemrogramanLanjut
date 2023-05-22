@@ -1,0 +1,25 @@
+package PraktikumPemrogramanLanjut7;
+
+public abstract class Kue {
+    private String Nama;
+    private double Harga;
+
+    public Kue(String Nama, double Harga) {
+        this.Nama = Nama;
+        this.Harga = Harga;
+    }
+
+    public double getHarga() {
+        return Harga;
+    }
+
+    public String getNama() {
+        return Nama;
+    }
+
+    public abstract double hitungHarga();
+
+    public String toString() {
+        return String.valueOf((System.out.printf("Nama\t\t: %s\nHarga\t\t: %s",Nama,Harga)));
+    }
+}
