@@ -34,27 +34,27 @@ public class Main {
         int totalJumlah = 0;
         String kueTermahal = "";
         for (Kue value: kue) {
-            // buat total harga
+            
             TotalHargaSemua += value.hitungHarga();
 
-            // buat total harga dan berat
+            
             if (value instanceof KuePesanan){
                 TotalHargaKuePesanan += value.hitungHarga();
                 TotalBerat += ((KuePesanan) value).getBerat();
             }
-            // buat total harga dan jumlah
+            
             if (value instanceof KueJadi){
                 TotalHargaKueJadi += value.hitungHarga();
                 totalJumlah += ((KueJadi) value).getJumlah();
             }
-            // buat harga akhir termahal
+            
             if (CekKueTermahal == 0){
                 CekKueTermahal += value.hitungHarga();
             } else if (value.hitungHarga() >= CekKueTermahal){
                 CekKueTermahal = value.hitungHarga();
                 kueTermahal = value.getNama();
             }
-            // buat tampilin tiap objek
+            
             value.toString();
         }
         System.out.println("=======================================");
