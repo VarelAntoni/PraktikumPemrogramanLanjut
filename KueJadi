@@ -1,0 +1,22 @@
+package PraktikumPemrogramanLanjut7;
+
+public class KueJadi extends Kue {
+    private double Jumlah;
+
+    public KueJadi(String Nama, double Harga, double Jumlah) {
+        super(Nama, Harga);
+        this.Jumlah = Jumlah;
+    }
+    public double hitungHarga(){
+        return Jumlah * super.getHarga() * 2;
+    }
+
+    public double getJumlah() {
+        return Jumlah;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + System.out.printf("\nJumlah\t\t: %s pcs\nTotal Harga\t: %s\nJenis Kue\t: %s\n\n", Jumlah, hitungHarga(),"Kue Jadi");
+    }
+}
