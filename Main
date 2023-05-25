@@ -1,0 +1,31 @@
+package PraktikumPemrogramanLanjut8;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Invoice invoice1 = new Invoice("Barang 1", 2, 70000);
+        Invoice invoice2 = new Invoice("Barang 2", 3, 50000);
+
+
+        Invoice[] invoices = {invoice1, invoice2};
+
+
+        Employee employee = new Employee(123456, "John Doe", 8000000, invoices);
+
+
+        System.out.println("Nomor Regristasi : " + employee.getRegistrationNumber());
+        System.out.println("Nama : " + employee.getName());
+        System.out.println("Gaji per Bulan : Rp." + employee.getSalaryPerMonth());
+
+        System.out.println("Shopping Details:");
+        for (Invoice invoice : employee.getInvoices()) {
+            System.out.println("Produk : " + invoice.getProductName());
+            System.out.println("Banyak Barang : " + invoice.getQuantity());
+            System.out.println("Harga per Barang : Rp." + invoice.getPricePerItem());
+            System.out.println("Total : Rp." + invoice.getPayableAmount());
+            System.out.println();
+        }
+
+        System.out.println("Total Gaji Setelah di Potong : Rp." + employee.getPayableAmount());
+    }
+}
