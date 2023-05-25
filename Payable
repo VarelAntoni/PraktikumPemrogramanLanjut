@@ -1,0 +1,5 @@
+package PraktikumPemrogramanLanjut8;
+
+interface Payable {
+    double getPayableAmount();
+}
